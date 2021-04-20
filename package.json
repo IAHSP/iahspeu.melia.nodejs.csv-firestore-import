@@ -1,0 +1,20 @@
+{
+  "name": "firebaseimport",
+  "version": "1.0.0",
+  "description": "small project to take reatimeDB exported JSON, and convert it to JSON useable for a firestore import",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "firebaseimport"
+  },
+  "author": "Gabriel Tumbaga",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "firebase": "^5.9.3"
+  }
+}
