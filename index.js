@@ -25,7 +25,7 @@ const db = admin.firestore();
 
 let counter = 0;
 
-fs.createReadStream('_tmpTestData.csv')
+fs.createReadStream('_gEditMembers.csv')
   .pipe(csv())
   .on('data', async (row) => {
     //console.log(`${counter.toString()}.  ${row.firstname} ${row.lastname} <${row.email}>`);
@@ -35,7 +35,7 @@ fs.createReadStream('_tmpTestData.csv')
     const strPhotoURL = 'https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png';
 
     const tmpPW = makeTmpPW(10);
-    console.log(`generated tmpPW: ${tmpPW}`);
+    //console.log(`generated tmpPW: ${tmpPW} for ${row.email}`);
 
 
 
