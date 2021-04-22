@@ -81,8 +81,8 @@ fs.createReadStream('_gEditMembers.csv')
             dateYYYY = tmpDateParts[2];
           }
 
-          const dateMM = tmpDateParts[0];
-          const dateDD = tmpDateParts[1];
+          const dateMM = tmpDateParts[1];
+          const dateDD = tmpDateParts[0];
 
           const dateString = `${dateYYYY}-${dateMM}-${dateDD}`; 
 
@@ -228,6 +228,7 @@ fs.createReadStream('_gEditMembers.csv')
             aspid: null
           });
 
+          console.log(`${row.email} has been imported`);
           return true;
 
         } else {
