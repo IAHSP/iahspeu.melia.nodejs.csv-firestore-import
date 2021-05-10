@@ -101,8 +101,8 @@ fs.createReadStream('_gEditMembers.csv')
             signupDateYYYY = tmpSignupDateParts[2];
           }
 
-          const signupDateMM = tmpSignupDateParts[0];
-          const signupDateDD = tmpSignupDateParts[1];
+          const signupDateMM = tmpSignupDateParts[1];
+          const signupDateDD = tmpSignupDateParts[0];
 
           const signupDateString = `${signupDateYYYY}-${signupDateMM}-${signupDateDD}`; 
 
